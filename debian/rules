@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	./build.sh
+
+override_dh_install:
+	dh_install
+	mkdir -p debian/python3-pyroute2/usr/lib/python3/dist-packages
+	cp -R v/lib/python3*/site-packages/pyroute2* debian/python3-pyroute2/usr/lib/python3/dist-packages

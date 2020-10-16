@@ -1,0 +1,14 @@
+Source: python3-pyroute2
+Section: admin
+Priority: optional
+Maintainer: Vladimir Vinogradenko <vladimirv@ixsystems.com>
+Build-Depends: debhelper-compat (= 12), python3-virtualenv
+Standards-Version: 4.4.0
+Homepage: https://pypi.org/project/pyroute2
+
+Package: python3-pyroute2
+Architecture: amd64
+Depends: python3
+Description: Pure Python netlink library
+ Pyroute2 is a pure Python netlink library. The core requires
+ only Python stdlib, no 3rd party libraries. 
